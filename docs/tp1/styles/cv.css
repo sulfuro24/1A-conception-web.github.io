@@ -1,0 +1,63 @@
+header {
+    background-color: cornflowerblue;
+
+}
+
+section {
+    border: solid;
+    border-width: 0.01cm;
+    padding: 1%;
+    border-style: dashed;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+
+}
+
+h2 {
+    color: azure;
+    text-align: center;
+
+}
+
+h5 {
+    color: azure;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    border-width: 1cm;
+    border-color: black;
+    border: solid;
+
+
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    border-width: 1cm;
+    border: solid;
+}
+
+.title_elm {
+    color: gray;
+}
+
+.desc_elm {
+    color: cornflowerblue;
+}
+
+footer {
+    font-size: large;
+    text-align: center;
+    background-color: cornflowerblue;
+}

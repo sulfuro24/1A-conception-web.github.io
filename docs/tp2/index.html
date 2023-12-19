@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TD7</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            min-width: 330px;
+        }
+
+        /* En-tête*/
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Menu de navigation */
+        #menu {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: table;
+            border-spacing: 2em;
+        }
+
+
+
+        header>nav>div {
+            display: table-row;
+        }
+
+        /* Tout bouton du menu */
+        header>nav>div>a.button {
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: table-cell;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #4CAF50;
+            /* Green */
+            font-size: 1.2em;
+            border-radius: 5%;
+            box-shadow: 0px 5px 10px 3px green;
+
+
+        }
+
+        /* ------------------------------------------------------- */
+        /* Question A: transition  et pointeur */
+        header>nav>div>a.button:hover {
+            cursor: pointer;
+            transition-duration: 0.7s;
+        }
+
+        header>nav>div>a.butGreen {
+            box-shadow: 0px 5px 10px 3px gray;
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+        }
+
+        header>nav>div>a.butGreen:hover {
+            background-color: white;
+            color: #4CAF50;
+        }
+
+        header>nav>div>a.butRed {
+            box-shadow: 0px 5px 10px 3px gray;
+            background-color: #F44336;
+            border-color: #F44336;
+        }
+
+        header>nav>div>a.butRed:hover {
+            background-color: white;
+            color: #F44336;
+        }
+
+        header>nav>div>a.butGray {
+            box-shadow: 0px 5px 10px 3px gray;
+            background-color: #e7e7e7;
+            color: black;
+            border-color: #e7e7e7;
+        }
+
+        header>nav>div>a.butGray:hover {
+            background-color: black;
+            color: #e7e7e7;
+        }
+
+        header>nav>div>a.butBlue {
+            box-shadow: 0px 5px 10px 3px gray;
+            background-color: #008CBA;
+            color: white;
+            border-color: #008CBA;
+        }
+
+        header>nav>div>a.butBlue:hover {
+            background-color: white;
+            color: #008CBA;
+        }
+
+        header>nav>div>a.button>span {
+            position: relative;
+        }
+
+        header>nav>div>a.button>span:after {
+            content: "»";
+            opacity: 0%;
+            position: absolute;
+            right: -16px;
+            transition-duration: 0.5s;
+        }
+
+
+        header>nav>div>a.button:hover>span:after {
+            opacity: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML-CSS TP3</h1>
+        <nav id="menu">
+            <div>
+                <a href="exo2.html" class="button butGreen">Exo 2<span></span></a>
+                <a href="exo3.html" class="button butRed">Exo 3<span></span></a>
+            </div>
+            <div>
+                <a href="exo4.html" class="button butBlue">Exo 4<span></span></a>
+                <a href="exo5.html" class="button butGray">Exo 5<span></span></a>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <title>Exo 2</title>
+    <meta charset="utf-8">
+</head>
+
+<body id="body">
+    <h1>EXO2</h1>
+    <span id="cpt">0</span>
+
+    <script>
+        window.addEventListener("load", function (event) {
+            timer = setInterval(timer, 2000);
+            function timer() {
+                document.getElementById("cpt").innerHTML++;
+
+                if (document.getElementById("cpt").innerHTML > 30) {
+                    clearInterval(timer);
+                    document.getElementById("cpt").innerHTML = "temps dépassé"
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
